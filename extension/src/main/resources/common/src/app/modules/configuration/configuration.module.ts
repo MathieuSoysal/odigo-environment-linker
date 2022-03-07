@@ -9,7 +9,7 @@ import { AppearanceComponent } from './components/appearance/appearance.componen
 import {RouterModule} from "@angular/router";
 import {CustomLinksComponent} from "./components/custom-links/custom-links.component";
 import { IconDropdownComponent } from './components/custom-links/components/icon-dropdown/icon-dropdown.component';
-
+import { PacmanComponent } from '../pacman/pacman.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { IconDropdownComponent } from './components/custom-links/components/icon
     BehaviourComponent,
     AppearanceComponent,
     CustomLinksComponent,
-    IconDropdownComponent
+    IconDropdownComponent,
+    PacmanComponent
   ],
     imports: [
         CommonModule,

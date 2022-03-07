@@ -9,6 +9,7 @@ import {BehaviourComponent} from "./modules/configuration/components/behaviour/b
 import {GeneralComponent} from "./modules/configuration/components/general/general.component";
 import {AppearanceComponent} from "./modules/configuration/components/appearance/appearance.component";
 import {CustomLinksComponent} from "./modules/configuration/components/custom-links/custom-links.component";
+import {PacmanComponent} from "./modules/pacman/pacman.component";
 
 export const ENV_VIEW = "environments";
 export const RELEASE_NOTE_VIEW = "release-note";
@@ -16,6 +17,7 @@ export const CONFIGURATION_VIEW = "configuration";
 export const LOADER_VIEW = "loader";
 export const MESSAGE_VIEW = "message";
 export const ABOUT_VIEW = "about";
+export const PACMAN_VIEW = "pacman";
 
 export const appRoutes: Routes = [
   {
@@ -37,6 +39,11 @@ export const appRoutes: Routes = [
     path: RELEASE_NOTE_VIEW,
     pathMatch: 'full',
     component: ReleaseNoteViewComponent
+  },
+  {
+    path: PACMAN_VIEW,
+    pathMatch: 'full',
+    component: PacmanComponent
   },
   {
     path: CONFIGURATION_VIEW,
